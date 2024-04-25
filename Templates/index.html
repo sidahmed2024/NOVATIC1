@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Application</title>
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header-section" id="home">
+        <div class="container">
+            <header class = "navbar">
+                <div class = "logo">
+                    <img src="images/logo.png" alt="DZ Care logo" width="50" height="50">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#home">Acceuil</a></li>
+                        <li><a href="#products">Produits</a></li>
+                        <li><a href="#best">Meilleur Produits</a></li>
+                        <li><a href="#contactes">Contacte</a></li>
+                        <li><a href="{{url_for('login')}}">Login</a></li
+                        <li><a href="{{url_for('register')}}">Enregistrer</a></li
+                    </ul>
+                    <!--<img src="images/panier.png" alt="Mon pannier" width="40px" border-radius="50%" >-->
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </nav>
+            </header>
+
+            <div class="row">
+                <div class="col-2"> 
+                    <h1> High-Tech Solutions</h1>
+                    <P>Nous vous proposons une large gamme de solutions high-tech qui répondent à vos besoins professionnels et personnels.</P>
+                    <ul>
+                        <li>Informatique</li>
+                        <li>Electronique</li>
+                        <li>Outillage</li>
+                        <li>Automatisation</li>
+                        <li>....</li>
+                    </ul>
+                    <a href="">Explorez notre catlogue   &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/HT1.png" alt="High-Tech Solutions">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- section des categories-->
+    <section class="categories" id="products">
+        <div class="container">
+            <h2>Catégories...</h2>
+            <div class="row">
+            <div class="col-3">
+                    <img src="images/Informatic.png" alt="Informatique">
+                    <h3>Informatique</h3>
+                </div>
+            
+            <div class="col-3">
+                    <img src="images/Elect.png" alt="Electronique">
+                    <h3>Electronique</h3>
+            </div>
+            <div class="col-3">
+                    <img src="images/Tools.png" alt="Outillage">
+                    <h3>Outillage</h3>
+            </div>
+            <div class="col-3">
+                <img src="images/auto.png" alt="Automatisation">
+                <h3>Automatisation</h3>
+            </div>
+            </div>
+        </div>
+    </section>
+<!--Meilleur produit-->
+<section class="featured-products" id="best">
+    <div class="container">
+        <h2>Meilleur Produits...</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/3D3.png" alt="Imprimante 3D">
+                <h3>Imprémente 3D PRUSA i3 MK3</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>75 000 DA</p>
+            </div>
+            <div class="col-4">
+                <img src="images/ElecKit1.png" alt="Kit Electronique">
+                <h3>Kit ELectronique K201-M2</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>23 000 DA</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lenovo2.png" alt="Laptop">
+                <h3>Laptop Lenovo T14 i7 14"</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p>195 000 DA</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- bas de page    -->
+<footer>
+    <h1>Contactes</h1>
+
+    <div class="services">
+        <div class="service"> 
+            <h3>Moyens de contaces</h3>
+            <ul>
+                <li>Email : blabla@bla.dz</li>
+                <li>Mobile : +213 770 00 00 00</li>
+                <li>fixe : +213 21 00 00 00</li>
+            </ul>
+        </div>
+        <div class="service"> 
+            <h3>Adresse:<br></h3>
+            <p>High-Tech Solution, <br> 21, rue des martires, <br> 1600, Alger <br> Algérie </p>
+        </div>
+    </div>
+    <p id = "contactes"> &copy; 2024, HIGH-TECH SOLUTION. </p>
+</footer>
+</body>
+
+</html>

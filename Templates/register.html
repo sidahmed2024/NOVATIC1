@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Inscription</title>
+</head>
+<body>
+    <h1>Formulaire d'inscription: </h1>
+    <h3>Nouveau utilisateur</h3>
+
+    <form method="POST" action="">
+        {{form.hidden_tag()}}
+        {{form.username }}
+        {{form.password}}
+        {{form.submit()}}
+    </form>
+
+    <li>J'ai déjà un compte.  <a href="{{url_for('login')}}"> Entrez ici...</a></li>
+    <br>
+    <br>
+    <br>
+    <li>Retour à la page principale:  <a href="{{url_for('index')}}"> Home...</a></li>
+
+
+<!----------------------------------------------------------------------------
+    <form action="{{url_for('Traitement')}}" method="POST">
+    <P>
+    <------- Champ de type text = Nom--  >
+        <label fro="nom"> Nom: </label>
+        <input type="text" name="nom" id="nom" required>
+    </P>
+    <P>
+        !-- Champ de type email = email-- >
+        <label fro="email"> Email: </label>
+        <input type="email" name="email" id="email" required>
+    </P>
+    <P>
+        !-- Champ de type pass =psw--
+        <label fro="psw"> Mot de passe: </label>
+        <input type="password" name="psw" id="psw" required>
+    </P>
+    <P>
+        !-- Champ de type radio = genre--
+        Sélectionner votre genre:
+        <input type="radio" name="gnr" value="1" id="choix1">
+        <label for="choix1">Mal</label>
+        <input type="radio" name="gnr" value="2" id="choix2">
+        <label for="choix2">Female</label>
+    </P>
+    <P>
+        !-- Champ de type liste = endroit de livraison--
+        <label fro="Delivery"> Endroit de livraison par default: </label>
+        <select name="livraison" id = "Delivery">
+                <option value="dom">Livraison à domicile</option>
+                <option value="wh1">Livraison à point de collect Beb Ezzouar</option>
+                <option value="wh2">Livraison à point de collect Cheraga</option>
+                <option value="wh1">Livraison à point de collect Oran</option>
+        </select>
+    </P>
+    <P>
+        !-- Champ de bouton = submit--
+        <input type="submit" value="Sinscrire">
+    </P>
+
+</form>
+-->
+
+</body>
+</html>
